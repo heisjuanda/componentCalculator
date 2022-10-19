@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0%;
+  padding: 0%;
+  background-color: rgb(126, 14, 83);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+div {
+  h3 {
+    text-align: center;
+    color: white;
+    font-size: 5vw;
+    transition: 1s;
+  }
+
+  h3:hover {
+    text-indent: 4vw;
+    letter-spacing: 1vw;
+    color: rgb(248, 11, 236);
+  }
+}
+
+.screen {
+  border: 4px solid white;
+  height: 15vw;
+  width: 60vw;
+  margin-left: 23%;
+  margin-bottom: 1%;
+}
+
+.screen .elemento {
+  color: white;
+}
+
+.number1 {
+  grid-area: uno;
+}
+
+.number2 {
+  grid-area: dos;
+}
+
+.number3 {
+  grid-area: tres;
+}
+
+.number4 {
+  grid-area: cuatro;
+}
+
+.number5 {
+  grid-area: cinco;
+}
+
+.number6 {
+  grid-area: seis;
+}
+
+.number7 {
+  grid-area: siete;
+}
+
+.number8 {
+  grid-area: ocho;
+}
+
+.number9 {
+  grid-area: nueve;
+}
+
+.number0 {
+  grid-area: cero;
+}
+
+.sum {
+  grid-area: suma;
+}
+
+.sub {
+  grid-area: resta;
+}
+
+.reset {
+  grid-area: reset;
+}
+
+.mul {
+  grid-area: mul;
+}
+
+.div {
+  grid-area: div;
+}
+
+.delete {
+  grid-area: del;
+}
+
+.operate {
+  grid-area: operar;
+}
+
+.dot {
+  grid-area: dot;
+}
+
+.nothing {
+  grid-area: nothing;
+}
+
+.parentesis1 {
+  grid-area: parentesis1;
+}
+
+.parentesis2 {
+  grid-area: parentesis2;
+}
+
+.binary {
+  grid-area: binary;
+}
+
+.decimal {
+  grid-area: decimal;
+}
+
+.table1 {
+  border: 5px solid white;
+  background-color: black;
+  width: 90vw;
+  height: 50vw;
+  padding: 10%;
+  display: grid;
+  grid-template-areas:
+    'siete ocho nueve del reset'
+    'cuatro cinco seis mul div'
+    'uno dos tres suma resta'
+    'cero dot operar parentesis1 parentesis2'
+    'binary binary decimal decimal decimal'
+  ;
+  gap: 5%;
+  margin-left: 5%;
+  grid-template-rows: 20% 20% 20% 20%;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: transparent;
+  width: 7vw;
+  height: 6vw;
+  font-size: 5vw;
+  transition: 0.5s;
+  border-radius: 1.5vw;
+  position: initial;
+
+  p {
+    text-align: center;
+    transform: translateY(-93%);
+    font-size: 5vw;
+  }
+}
+
+button:hover {
+  border: 1px solid white;
+  box-shadow: 1px 1px 5px white;
+}
+
+button:active {
+  font-size: 4vw;
+  padding: 1.2vw;
+}
+
+.delete,
+.reset {
+  button {
+    width: 12vw;
+    background-color: rgb(27, 105, 196);
+  }
+}
+
+.decimal,
+.binary {
+  button {
+    width: 20vw;
+    background-color: rgb(27, 105, 196);
+
+    p {
+      color: black;
+    }
+  }
+}
+
+.title {
+  grid-area: titulo;
+}
+
+.insta {
+  grid-area: insta;
+}
+
+.github {
+  grid-area: github;
+}
+
+.table2 {
+  display: grid;
+  grid-template-areas:
+    'titulo titulo'
+    'insta github'
+  ;
+
+  div {
+    opacity: 0.8;
+    height: 10vw;
+    h4 {
+      text-align: center;
+      font-size: 4vw;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    p {
+      font-size: 3vw;
+      margin-left: 4vw;
+      a {
+        text-shadow: 0px 0px 8px white;
+        color: white;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+      }
+    }
+  }
+
+
+  width: 50%;
+  margin-top: 2vw;
+  margin-left: 25vw;
+}
+
+@media screen and (max-width: 573px) {
+  .table1 {
+    border: 5px solid white;
+    background-color: black;
+    width: 90vw;
+    height: 80vw;
+    padding: 10%;
+    display: grid;
+    grid-template-areas:
+      'siete ocho nueve del reset'
+      'cuatro cinco seis mul div'
+      'uno dos tres suma resta'
+      'cero dot operar parentesis1 parentesis2'
+      'binary binary decimal decimal decimal'
+    ;
+    gap: 1%;
+    margin-left: 5%;
+    grid-template-rows:  20% 20% 20% 20% 20% 20% 20% 20%;
+  }
+}
+
+@media screen and (min-width: 1135px) {
+  .table1 {
+    border: 5px solid white;
+    background-color: black;
+    width: 90vw;
+    height: 44vw;
+    padding: 5%;
+    display: grid;
+    grid-template-areas:
+      'siete ocho nueve del reset'
+      'cuatro cinco seis mul div'
+      'uno dos tres suma resta'
+      'cero dot operar parentesis1 parentesis2'
+      'binary binary decimal decimal decimal'
+    ;
+    gap: 5%;
+    margin-left: 5%;
+    grid-template-rows:  15% 15% 15% 15% 15% 15% 15% 15%;
+
+  }
+}
