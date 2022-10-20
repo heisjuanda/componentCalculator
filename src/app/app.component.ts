@@ -146,11 +146,12 @@ export class AppComponent {
               if (operaciones[i] == '+') {
                 if (operaciones[i - 1] == '') {
                   operaciones[i - 1] = '0';
+                  //console.log(operaciones);
                 } else
                   if (operaciones[i + 1] == '') {
                     operaciones[i + 1] = '0';
-                  } else
-                    aux = parseFloat(operaciones[i - 1]) + parseFloat(operaciones[i + 1]);
+                  }
+                aux = parseFloat(operaciones[i - 1]) + parseFloat(operaciones[i + 1]);
                 operaciones[i + 1] = aux.toString();
                 operaciones.splice(i, 1);
                 operaciones.splice(i - 1, 1);
@@ -217,16 +218,16 @@ export class AppComponent {
   DecimalToBinary() {
     let A: number[] = [32768, 16384, 8192, 4096, 2048, 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1];
     let C: number = 0;
-    let resultado:string = '';
+    let resultado: string = '';
     if ((this.pantalla.includes('+')) || (this.pantalla.includes('-') || (this.pantalla.includes('x') || (this.pantalla.includes('/')) || (this.pantalla.includes('(')) || (this.pantalla.includes(')'))))) {
       this.pantalla = 'Invalid Value';
     } else {
-      let numero:number = parseFloat(this.pantalla);
+      let numero: number = parseFloat(this.pantalla);
       for (let i = 0; i < A.length; i++) {
-        if ((numero >= C+A[i])) {
+        if ((numero >= C + A[i])) {
           resultado += 1;
           C += A[i];
-        }else{
+        } else {
           resultado += 0;
         }
       }
